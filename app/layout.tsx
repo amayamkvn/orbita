@@ -1,37 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "Órbita | Desarrollo de sitios web",
+  title: "Órbita | Sitios Web de Alto Impacto para Negocios Locales",
   description:
-    "Órbita es una empresa de desarrollo de sitios web. Landing pages, sitios corporativos y mantenimiento con enfoque en rendimiento y conversión.",
+    "Sitios web profesionales que te encuentran en Google y te traen consultas directo a WhatsApp. Landing pages y sitios completos para negocios locales en Honduras.",
   openGraph: {
-    title: "Órbita | Desarrollo de sitios web",
+    title: "Órbita | Sitios Web de Alto Impacto para Negocios Locales",
     description:
-      "Diseñamos y desarrollamos experiencias web rápidas y orientadas a resultados.",
-    locale: "es_ES",
+      "Transforma tu negocio en días, no en meses. Diseño y desarrollo web con entrega rápida y WhatsApp integrado.",
+    locale: "es_HN",
     type: "website",
   },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="es"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="es" className={`${plusJakarta.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
 }

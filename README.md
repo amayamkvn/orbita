@@ -1,13 +1,16 @@
 # landingpage-orbita
 
-Landing page para **Órbita**, empresa de desarrollo de sitios web.
+Landing de **Órbita**, empresa de desarrollo de sitios web para negocios locales en Honduras.
+
+El diseño está documentado en [`DESIGN.md`](./DESIGN.md) (exportado desde Stitch).
 
 ## Stack
 
-- [Next.js 16](https://nextjs.org/) (App Router)
+- Next.js 16 (App Router)
 - React 19
 - TypeScript
 - Tailwind CSS 4
+- Plus Jakarta Sans
 
 ## Desarrollo
 
@@ -18,22 +21,14 @@ npm run dev
 
 Abre [http://localhost:3000](http://localhost:3000).
 
-## Scripts
-
-| Comando        | Descripción              |
-| -------------- | ------------------------ |
-| `npm run dev`  | Servidor de desarrollo   |
-| `npm run build`| Build de producción      |
-| `npm run start`| Servidor de producción   |
-| `npm run lint` | ESLint                   |
-
 ## Estructura
 
 ```
-app/                 Rutas y layout
+app/                      Layout, estilos y página
 components/
-  layout/            Header, footer
-  sections/          Secciones de la landing (hero, servicios, etc.)
+  layout/                 Header y footer
+  sections/               Hero, planes, beneficios, proceso, caso, FAQ, CTA
+  ui/                     Botón, badge, logo, iconos
+lib/site.ts               Copy, precios y enlaces WhatsApp
+public/brand/             Logo y fotos
 ```
-
-Cuando tengas el diseño en Stitch, añade `DESIGN.md` en la raíz para alinear colores, tipografía y componentes con el mockup.

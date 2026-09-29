@@ -1,31 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050816;
-  --foreground: #f4f6fb;
-  --orbita-primary: #6366f1;
-  --orbita-primary-hover: #818cf8;
-  --orbita-accent: #22d3ee;
-  --orbita-muted: #94a3b8;
-  --orbita-surface: #0f172a;
-  --orbita-border: rgba(148, 163, 184, 0.2);
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --brand-purple: #7c3aed;
+  --brand-purple-hover: #6d28d9;
+  --brand-purple-light: #9061f9;
+  --brand-purple-dark: #5b21b6;
+  --brand-black: #0a0a0a;
+  --brand-card: #121214;
+  --brand-border: #27272a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-orbita-primary: var(--orbita-primary);
-  --color-orbita-primary-hover: var(--orbita-primary-hover);
-  --color-orbita-accent: var(--orbita-accent);
-  --color-orbita-muted: var(--orbita-muted);
-  --color-orbita-surface: var(--orbita-surface);
-  --color-orbita-border: var(--orbita-border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-purple-hover: var(--brand-purple-hover);
+  --color-brand-purple-light: var(--brand-purple-light);
+  --color-brand-purple-dark: var(--brand-purple-dark);
+  --color-brand-black: var(--brand-black);
+  --color-brand-card: var(--brand-card);
+  --color-brand-border: var(--brand-border);
+  --font-sans: var(--font-plus-jakarta);
+  --shadow-glow: 0 0 35px -5px rgba(124, 58, 237, 0.35);
+  --shadow-glow-lg: 0 0 55px -10px rgba(124, 58, 237, 0.45);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+}
+
+::selection {
+  background: #7c3aed;
+  color: #ffffff;
 }

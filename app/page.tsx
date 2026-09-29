@@ -1,9 +1,12 @@
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import { Contact } from "@/components/sections/contact";
+import { Benefits } from "@/components/sections/benefits";
+import { CaseStudy } from "@/components/sections/case-study";
+import { FAQ } from "@/components/sections/faq";
+import { FinalCTA } from "@/components/sections/final-cta";
 import { Hero } from "@/components/sections/hero";
+import { Pricing } from "@/components/sections/pricing";
 import { Process } from "@/components/sections/process";
-import { Services } from "@/components/sections/services";
 
 export default function Home() {
   return (
@@ -11,9 +14,12 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Services />
+        <Pricing />
+        <Benefits />
         <Process />
-        <Contact />
+        <CaseStudy />
+        <FAQ />
+        <FinalCTA />
       </main>
       <Footer />
     </>
