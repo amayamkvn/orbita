@@ -50,8 +50,8 @@ export function Hero() {
             <Image
               src="/brand/phone-mockup.png"
               alt="Mockup móvil Órbita: tu negocio en la era digital"
-              width={340}
-              height={421}
+              width={254}
+              height={414}
               className="relative h-auto w-full drop-shadow-2xl"
               priority
             />
