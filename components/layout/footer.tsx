@@ -20,7 +20,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 md:grid-cols-4 md:px-6">
         <div className="space-y-4">
           <a href="#">
-            <Logo inverted size="md" />
+            <Logo inverted size="lg" />
           </a>
           <p className="max-w-xs text-xs leading-relaxed text-zinc-500">
             {site.tagline}

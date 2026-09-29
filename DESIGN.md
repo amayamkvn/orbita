@@ -123,7 +123,7 @@ Cargar con `next/font/google` → `Plus_Jakarta_Sans` (sustituir Geist en `layou
 ### Header (`MainHeader`)
 
 - Sticky, `bg-white/90`, `backdrop-blur-md`, borde `border-zinc-100`.
-- Logo imagen (altura ~`h-16` desktop, `h-9` mobile).
+- Logo PNG transparente (altura ~`h-20` desktop, `h-12` mobile).
 - Nav desktop: Beneficios, Planes y Precios, Proceso, Casos de Éxito, FAQ (sin “Servicios”).
 - CTA **“Hablemos”**: pill `rounded-full`, fondo `#7C3AED`, icono WhatsApp, enlace a `wa.me`.
 

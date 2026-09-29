@@ -8,24 +8,25 @@ type LogoProps = {
 };
 
 const sizes = {
-  sm: "h-9 w-auto",
-  md: "h-12 w-auto",
-  lg: "h-16 w-auto",
+  sm: "h-12 w-auto",
+  md: "h-14 w-auto",
+  lg: "h-20 w-auto",
 };
 
 export function Logo({ className, inverted, size = "md" }: LogoProps) {
   return (
     <span
       className={cn(
-        inverted && "inline-flex rounded-xl bg-white px-2 py-1.5 shadow-sm",
+        inverted && "inline-flex rounded-xl bg-white px-2.5 py-2 shadow-sm",
         className,
       )}
     >
       <Image
         src="/brand/logo.png"
         alt="Órbita"
-        width={200}
-        height={80}
+        width={396}
+        height={142}
+        quality={100}
         className={cn("object-contain", sizes[size])}
         priority
       />
