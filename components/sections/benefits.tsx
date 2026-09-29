@@ -1,16 +1,16 @@
 import {
-  BoltIcon,
-  ChartIcon,
   ClockIcon,
-  ShieldIcon,
+  EyeIcon,
+  PhotoIcon,
+  UsersIcon,
 } from "@/components/ui/icons";
 import { benefits } from "@/lib/site";
 
 const icons = {
-  bolt: BoltIcon,
-  chart: ChartIcon,
+  eye: EyeIcon,
+  users: UsersIcon,
   clock: ClockIcon,
-  shield: ShieldIcon,
+  photo: PhotoIcon,
 };
 
 export function Benefits() {
@@ -31,15 +31,15 @@ export function Benefits() {
             return (
               <article
                 key={benefit.title}
-                className="rounded-2xl border border-zinc-100 bg-zinc-50 p-6 transition-all duration-200 hover:-translate-y-1 hover:border-purple-200 md:p-8"
+                className="flex flex-col items-center rounded-3xl border border-zinc-100 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md md:p-8"
               >
-                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-50 text-brand-purple">
-                  <Icon className="h-6 w-6" />
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[22px] bg-[#F5F3FF] text-brand-purple shadow-sm md:h-20 md:w-20 md:rounded-[24px]">
+                  <Icon className="h-7 w-7 md:h-9 md:w-9" />
                 </div>
                 <h3 className="mb-2 text-lg font-bold text-zinc-950">
                   {benefit.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-zinc-600">
+                <p className="max-w-xs text-sm leading-relaxed text-zinc-500">
                   {benefit.description}
                 </p>
               </article>

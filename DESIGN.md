@@ -124,7 +124,7 @@ Cargar con `next/font/google` → `Plus_Jakarta_Sans` (sustituir Geist en `layou
 
 - Sticky, `bg-white/90`, `backdrop-blur-md`, borde `border-zinc-100`.
 - Logo imagen (altura ~`h-16` desktop, `h-9` mobile).
-- Nav desktop: Servicios, Beneficios, Planes y Precios, Proceso, Casos de Éxito, FAQ.
+- Nav desktop: Beneficios, Planes y Precios, Proceso, Casos de Éxito, FAQ (sin “Servicios”).
 - CTA **“Hablemos”**: pill `rounded-full`, fondo `#7C3AED`, icono WhatsApp, enlace a `wa.me`.
 
 ### Hero (`HeroSection`)
@@ -146,8 +146,8 @@ Cargar con `next/font/google` → `Plus_Jakarta_Sans` (sustituir Geist en `layou
 ### Planes y precios (`#planes`)
 
 - Fondo `brand-black`, anillos orbitales de fondo.
-- **Plan Básico — Landing:** `L 7,000` pago único; mantenimiento **L 400/mes** (desktop) / **L 450/mes** (mobile — unificar en implementación).
-- **Plan Estándar — Sitio completo:** `L 10,500`; mantenimiento **L 450/mes**; borde `border-brand-purple`, badge “MÁS POPULAR”.
+- **Plan Básico — Landing:** `L 7,000` pago único; mantenimiento **L 450/mes** (ambos planes, lempiras).
+- **Plan Estándar — Sitio completo:** `L 10,500`; mantenimiento **L 450/mes**; borde púrpura, badge ámbar **“★ El más popular”**.
 - Lista con iconos check púrpura / esmeralda en plan destacado.
 - Banner inferior: hosting desde L 450/mes, dominio y código del cliente.
 
@@ -174,7 +174,7 @@ Cargar con `next/font/google` → `Plus_Jakarta_Sans` (sustituir Geist en `layou
 
 - Acordeón `<details>` sobre `bg-zinc-50`.
 - 4 preguntas: plazos de entrega, mantenimiento, WhatsApp, ampliaciones futuras.
-- **Nota:** el copy del FAQ menciona **$19.900 CLP/mes** en un párrafo; los planes usan **Lempiras (L)**. Alinear copy con mercado Honduras al implementar.
+- FAQ y precios siempre en **lempiras (L)**. Mantenimiento: **L 450/mes** en ambos planes.
 
 ### CTA final
 
@@ -228,13 +228,13 @@ URL de logo usada en HTML (exportar a `/public` en build):
 | 8 | CTA final | — | Negro |
 | 9 | Footer | — | Negro |
 
-**Gap conocido:** el menú enlaza `#servicios` pero **no hay sección `id="servicios"`** en el HTML desktop. Crear sección Servicios o redirigir el enlace a `#planes` / `#beneficios`.
+El menú no incluye “Servicios”: esa etiqueta duplicaba **Planes y Precios** (`#planes`).
 
 ### Mobile — pantalla canónica
 
-**Título Stitch:** Órbita - Landing Page (Versión Mobile)  
-**Screen ID:** `8d05d2b784784c12b49e02eabd10e39c`  
-**Dimensiones:** 780 × 10150 px (`deviceType: MOBILE`)
+**Título Stitch:** Órbita - Mobile Hero con Mockup de Smartphone 3D  
+**Screen ID:** `8bafee590f3b4b34b789c325021522d1`  
+**Dimensiones:** 780 × 11578 px (`deviceType: MOBILE`)
 
 | Orden | Sección | Notas |
 | --- | --- | --- |

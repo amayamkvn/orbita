@@ -1,30 +1,30 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircleIcon } from "@/components/ui/icons";
+import { CheckMiniIcon } from "@/components/ui/icons";
 import { cn } from "@/lib/cn";
 import { plans, whatsappUrl } from "@/lib/site";
 
 export function Pricing() {
   return (
     <section
-      id="servicios"
-      className="relative overflow-hidden bg-brand-black py-12 text-white md:py-24"
+      id="planes"
+      className="relative scroll-mt-24 overflow-hidden bg-brand-black py-12 text-white md:py-24"
     >
       <div className="pointer-events-none absolute inset-0 opacity-20" aria-hidden>
         <div className="absolute top-0 left-1/2 h-[400px] w-[800px] -translate-x-1/2 -translate-y-32 rounded-full border border-brand-purple" />
         <div className="absolute top-0 left-1/2 h-[600px] w-[1200px] -translate-x-1/2 -translate-y-52 rounded-full border border-brand-purple/40" />
       </div>
       <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-6">
-        <div id="planes" className="mx-auto mb-10 max-w-2xl scroll-mt-28 text-center md:mb-16">
+        <div className="mx-auto mb-10 max-w-2xl text-center md:mb-16">
           <Badge tone="dark" className="mb-4">
-            Servicios & Planes
+            Planes
           </Badge>
           <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-white sm:text-5xl">
             Planes transparentes pensados para tu negocio
           </h2>
           <p className="text-sm text-zinc-400 md:text-base">
-            Desarrollo profesional de pago único con soporte recurrente opcional y
-            sin letra chica.
+            Desarrollo profesional de pago único en lempiras, con soporte
+            recurrente opcional y sin letra chica.
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 items-stretch gap-8 md:grid-cols-2">
@@ -32,61 +32,83 @@ export function Pricing() {
             <article
               key={plan.id}
               className={cn(
-                "relative flex flex-col justify-between rounded-3xl border bg-brand-card p-6 transition-all duration-300 sm:p-10",
+                "relative flex flex-col justify-between rounded-3xl border bg-white p-6 text-zinc-900 shadow-lg transition-all duration-300 sm:p-10",
                 plan.featured
-                  ? "border-2 border-brand-purple shadow-2xl shadow-purple-500/25"
-                  : "border-brand-border hover:border-zinc-700",
+                  ? "border-2 border-brand-purple shadow-2xl shadow-purple-500/20"
+                  : "border-zinc-200/80 hover:shadow-xl",
               )}
             >
               {plan.featured ? (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-brand-purple px-4 py-1 text-[11px] font-extrabold tracking-wider text-white uppercase shadow-md">
-                  ★ Más popular y recomendado
+                <div className="absolute -top-3.5 right-6 flex items-center gap-1 rounded-full bg-amber-400 px-3.5 py-1 text-[11px] font-extrabold tracking-wider text-zinc-950 uppercase shadow-md">
+                  <span>★</span> El más popular
                 </div>
               ) : null}
               <div>
                 <div className="mb-4 flex items-center justify-between">
-                  <span className="text-xs font-bold tracking-wider text-purple-400 uppercase">
+                  <span
+                    className={cn(
+                      "text-xs font-bold tracking-wider uppercase",
+                      plan.featured ? "text-brand-purple" : "text-zinc-900",
+                    )}
+                  >
                     {plan.name}
                   </span>
                   <span
                     className={cn(
                       "rounded-full px-3 py-1 text-xs font-medium",
                       plan.featured
-                        ? "border border-brand-purple/40 bg-brand-purple/20 text-brand-purple-light"
-                        : "bg-zinc-800 text-zinc-300",
+                        ? "border border-purple-200/50 bg-purple-50 text-brand-purple"
+                        : "bg-zinc-100 text-zinc-600",
                     )}
                   >
                     {plan.delivery}
                   </span>
                 </div>
-                <h3 className="mb-2 text-2xl font-bold text-white sm:text-3xl">
+                <h3 className="mb-2 text-2xl font-extrabold text-zinc-950 sm:text-3xl">
                   {plan.product}
                 </h3>
-                <p className="mb-6 text-sm text-zinc-400">{plan.description}</p>
-                <div className="mb-8 border-b border-zinc-800 pb-6">
+                <p className="mb-6 text-sm text-zinc-600">{plan.description}</p>
+                <div className="mb-8 border-b border-zinc-100 pb-6">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-extrabold tracking-tight text-white">
+                    <span className="text-4xl font-extrabold tracking-tight text-zinc-950">
                       {plan.price}
                     </span>
-                    <span className="text-xs font-semibold text-zinc-400 uppercase">
+                    <span className="text-xs font-semibold text-zinc-500 uppercase">
                       {plan.cadence}
                     </span>
                   </div>
-                  <p className="mt-2 flex items-center gap-1.5 text-xs font-medium text-emerald-400">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  <p className="mt-2 flex items-center gap-1.5 text-xs font-medium text-zinc-500">
+                    <span
+                      className={cn(
+                        "h-1.5 w-1.5 rounded-full",
+                        plan.featured ? "bg-emerald-400" : "bg-brand-purple",
+                      )}
+                    />
                     Mantenimiento, hosting y cambios ligeros: {plan.maintenance}
                   </p>
                 </div>
-                <ul className="mb-8 space-y-3.5 text-sm text-zinc-300">
+                <ul className="mb-8 space-y-3.5 text-sm text-zinc-700">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
-                      <CheckCircleIcon
+                      <span
                         className={cn(
-                          "mt-0.5 h-5 w-5 shrink-0",
-                          plan.featured ? "text-emerald-400" : "text-brand-purple",
+                          "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full",
+                          plan.featured
+                            ? "bg-brand-purple text-white shadow-sm"
+                            : "bg-purple-50 text-brand-purple",
                         )}
-                      />
-                      <span>{feature}</span>
+                      >
+                        <CheckMiniIcon className="h-3.5 w-3.5" />
+                      </span>
+                      <span
+                        className={
+                          plan.featured
+                            ? "font-semibold text-zinc-900"
+                            : "font-medium"
+                        }
+                      >
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -94,8 +116,7 @@ export function Pricing() {
               <Button
                 href={whatsappUrl(plan.message)}
                 external
-                variant={plan.featured ? "primary" : "secondary"}
-                className="w-full"
+                className="w-full rounded-2xl"
               >
                 {plan.cta}
               </Button>

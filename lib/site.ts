@@ -6,6 +6,7 @@ export const site = {
   phones: ["+504 2793-4073", "+504 9917-8861"],
   whatsappNumber: "50427934073",
   caseStudyUrl: "https://lab-martinezruiz.vercel.app",
+  currency: "Lempiras",
 } as const;
 
 export function whatsappUrl(message: string) {
@@ -13,7 +14,6 @@ export function whatsappUrl(message: string) {
 }
 
 export const navLinks = [
-  { href: "#servicios", label: "Servicios" },
   { href: "#beneficios", label: "Beneficios" },
   { href: "#planes", label: "Planes y Precios" },
   { href: "#proceso", label: "Proceso" },
@@ -22,7 +22,6 @@ export const navLinks = [
 ] as const;
 
 export const footerNav = [
-  { href: "#servicios", label: "Servicios" },
   { href: "#beneficios", label: "Beneficios" },
   { href: "#planes", label: "Planes y Precios" },
   { href: "#proceso", label: "Proceso de Trabajo" },
@@ -50,7 +49,7 @@ export const plans = [
     description:
       "Una página optimizada para capturar prospectos y redirigirlos directo a ti.",
     price: "L 7,000",
-    cadence: "pago único",
+    cadence: "/ Pago único",
     delivery: "Entrega en 3–5 días",
     maintenance: "L 450/mes",
     featured: false,
@@ -60,7 +59,7 @@ export const plans = [
       "Formulario de contacto",
       "Aparece cuando te busquen en Google",
     ],
-    cta: "Elegir Plan Básico",
+    cta: "Comenzar ahora",
     message: "Hola Órbita, me interesa el Plan Básico Landing Page",
   },
   {
@@ -70,7 +69,7 @@ export const plans = [
     description:
       "Estructura multi-página profesional para posicionar tu marca y dominar tu rubro local.",
     price: "L 10,500",
-    cadence: "pago único",
+    cadence: "/ Pago único",
     delivery: "Entrega en 7–10 días",
     maintenance: "L 450/mes",
     featured: true,
@@ -80,43 +79,59 @@ export const plans = [
       "Ficha de Google Maps optimizada",
       "WhatsApp, Instagram y Google Maps integrados",
     ],
-    cta: "Elegir Plan Estándar →",
+    cta: "Comenzar ahora",
     message: "Hola Órbita, me interesa el Plan Estándar Sitio Completo",
   },
 ] as const;
 
 export const benefits = [
   {
-    title: "Más visibilidad",
-    description:
-      "Destaca en Google y redes sociales para que tus clientes te encuentren fácilmente.",
-    icon: "bolt" as const,
+    title: "Mayor visibilidad",
+    description: "Haz que tu marca sea vista por más personas.",
+    icon: "eye" as const,
   },
   {
     title: "Más clientes",
-    description:
-      "Sitios diseñados para convertir visitas en consultas y ventas reales directo a tu WhatsApp.",
-    icon: "chart" as const,
+    description: "Convierte visitas en oportunidades.",
+    icon: "users" as const,
   },
   {
     title: "Ahorra tiempo",
-    description:
-      "Nos encargamos de tu presencia digital para que tú te enfoques en tu negocio.",
+    description: "Automatiza y enfócate en lo importante.",
     icon: "clock" as const,
   },
   {
     title: "Imagen profesional",
-    description:
-      "Un sitio moderno y confiable para destacar frente a tu competencia.",
-    icon: "shield" as const,
+    description: "Proyecta confianza desde el primer clic.",
+    icon: "photo" as const,
   },
 ] as const;
 
 export const processSteps = [
-  { step: "01. Hablamos", detail: "1 llamada ágil" },
-  { step: "02. Diseñamos", detail: "Con tu marca y contenido" },
-  { step: "03. Lanzamos", detail: "Dominio, hosting y SSL" },
-  { step: "04. Acompañamos", detail: "Soporte mensual continuo" },
+  {
+    n: 1,
+    title: "Hablamos",
+    detail: "Breve conversación sobre tus objetivos.",
+    outlined: false,
+  },
+  {
+    n: 2,
+    title: "Diseñamos",
+    detail: "Personalizamos tu marca y contenido.",
+    outlined: false,
+  },
+  {
+    n: 3,
+    title: "Lanzamos",
+    detail: "Puesta en marcha con tu dominio y hosting.",
+    outlined: false,
+  },
+  {
+    n: 4,
+    title: "¡Listo!",
+    detail: "Comienza a recibir clientes y resultados.",
+    outlined: true,
+  },
 ] as const;
 
 export const faqs = [
@@ -128,7 +143,7 @@ export const faqs = [
   {
     question: "¿Cómo funciona el cobro recurrente de mantenimiento?",
     answer:
-      "El desarrollo web tiene un pago inicial único. El servicio mensual de L 450/mes es opcional y cubre hosting de alta velocidad, certificado SSL, copias de seguridad y ajustes ligeros. Puedes cancelarlo cuando desees: tú eres 100% dueño del código y del dominio.",
+      "El desarrollo web tiene un pago inicial único en lempiras (L). El servicio mensual de L 450/mes es opcional y cubre hosting de alta velocidad, certificado SSL, copias de seguridad y ajustes ligeros. Puedes cancelarlo cuando desees: tú eres 100% dueño del código y del dominio.",
   },
   {
     question: "¿Cómo funciona la integración con WhatsApp?",

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon, CheckCircleIcon } from "@/components/ui/icons";
@@ -40,6 +41,20 @@ export function Hero() {
                 <span>{item}</span>
               </div>
             ))}
+          </div>
+          <div className="relative mx-auto mt-8 flex max-w-[270px] flex-col items-center lg:hidden">
+            <div
+              className="pointer-events-none absolute h-64 w-64 -translate-y-4 rounded-full bg-gradient-to-tr from-brand-purple/20 to-indigo-600/10 blur-2xl"
+              aria-hidden
+            />
+            <Image
+              src="/brand/phone-mockup.png"
+              alt="Mockup móvil Órbita: tu negocio en la era digital"
+              width={340}
+              height={421}
+              className="relative h-auto w-full drop-shadow-2xl"
+              priority
+            />
           </div>
         </div>
         <div className="hidden lg:col-span-6 lg:block">

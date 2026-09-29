@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "@/lib/site";
 
 export function CaseStudy() {
@@ -43,35 +44,15 @@ export function CaseStudy() {
               </a>
             </div>
             <div className="lg:col-span-7">
-              <div className="overflow-hidden rounded-2xl border border-zinc-700/80 bg-zinc-900 shadow-2xl">
-                <div className="flex items-center gap-1.5 border-b border-white/5 bg-gray-900 px-3 py-1.5">
-                  <span className="h-2 w-2 rounded-full bg-red-500/70" />
-                  <span className="h-2 w-2 rounded-full bg-yellow-500/70" />
-                  <span className="h-2 w-2 rounded-full bg-green-500/70" />
-                  <span className="ml-2 text-[9px] text-gray-400">
-                    lab-martinezruiz.vercel.app
-                  </span>
-                </div>
-                <div className="space-y-4 bg-white p-6 text-zinc-900">
-                  <p className="text-[10px] font-bold tracking-widest text-teal-700 uppercase">
-                    Laboratorio clínico
-                  </p>
-                  <h3 className="text-xl font-extrabold text-[#0B2545]">
-                    Martínez Ruiz
-                  </h3>
-                  <p className="text-sm text-zinc-600">
-                    Resultados confiables, atención en sucursal y contacto
-                    directo por WhatsApp.
-                  </p>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="rounded-xl bg-slate-50 p-3 text-xs">
-                      Análisis clínicos
-                    </div>
-                    <div className="rounded-xl bg-slate-50 p-3 text-xs">
-                      Resultados el mismo día
-                    </div>
-                  </div>
-                </div>
+              <div className="flex items-center justify-center overflow-hidden rounded-2xl border border-zinc-700/80 bg-zinc-950 p-2 shadow-2xl sm:p-3">
+                <Image
+                  src="/brand/case-wireframe.svg"
+                  alt="Wireframe profesional del sitio Laboratorio Clínico Martínez Ruiz"
+                  width={800}
+                  height={520}
+                  unoptimized
+                  className="h-auto w-full rounded-xl"
+                />
               </div>
             </div>
           </div>

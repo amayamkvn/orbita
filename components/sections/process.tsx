@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/cn";
 import { processSteps, whatsappUrl } from "@/lib/site";
 
 export function Process() {
@@ -44,18 +45,64 @@ export function Process() {
             >
               Comenzar a hablar con nosotros
             </Button>
-            <div className="grid w-full grid-cols-2 gap-3 border-t border-zinc-800/80 pt-8 sm:grid-cols-4">
+
+            <div className="relative w-full space-y-6 border-t border-zinc-800/80 pt-10 pl-12 md:hidden">
+              <div
+                className="absolute top-16 bottom-10 left-4 w-0.5 bg-brand-purple/60"
+                aria-hidden
+              />
               {processSteps.map((item) => (
-                <div
-                  key={item.step}
-                  className="flex flex-col items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900/80 p-4 text-center"
-                >
-                  <span className="mb-1 font-mono text-xs font-bold text-purple-400 sm:text-sm">
-                    {item.step}
-                  </span>
-                  <span className="text-[11px] text-zinc-400">{item.detail}</span>
+                <div key={item.n} className="relative flex items-center">
+                  <div
+                    className={cn(
+                      "absolute -left-12 z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-extrabold ring-4 ring-[#0A0A0A]",
+                      item.outlined
+                        ? "border-2 border-brand-purple-light bg-[#111116] text-brand-purple-light"
+                        : "bg-brand-purple text-white",
+                    )}
+                  >
+                    {item.n}
+                  </div>
+                  <div className="w-full rounded-xl border border-zinc-800 bg-zinc-900/80 p-4">
+                    <h4 className="mb-0.5 text-sm font-bold text-white">
+                      {item.title}
+                    </h4>
+                    <p className="text-xs text-zinc-400">{item.detail}</p>
+                  </div>
                 </div>
               ))}
+            </div>
+
+            <div className="relative hidden w-full border-t border-zinc-800/80 pt-10 md:block">
+              <div
+                className="pointer-events-none absolute top-[64px] right-[12%] left-[12%] z-0 h-[2px] bg-[#6D28D9]/70"
+                aria-hidden
+              />
+              <div className="relative z-10 grid grid-cols-4 gap-x-4">
+                {processSteps.map((item) => (
+                  <div
+                    key={item.n}
+                    className="flex flex-col items-center text-center"
+                  >
+                    <div
+                      className={cn(
+                        "mb-4 flex h-12 w-12 items-center justify-center rounded-full text-base font-bold text-white",
+                        item.outlined
+                          ? "border-2 border-purple-400 bg-[#0A0A0A]"
+                          : "bg-brand-purple",
+                      )}
+                    >
+                      {item.n}
+                    </div>
+                    <h4 className="mb-1 text-base font-bold tracking-tight text-white">
+                      {item.title}
+                    </h4>
+                    <p className="max-w-[180px] text-xs leading-relaxed text-zinc-400">
+                      {item.detail}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           <div className="relative flex justify-center lg:col-span-5">

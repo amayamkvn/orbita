@@ -98,28 +98,49 @@ export function LinkedInIcon(props: IconProps) {
   );
 }
 
-export function BoltIcon(props: IconProps) {
+export function CheckMiniIcon(props: IconProps) {
   return (
-    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden {...props}>
+    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden {...props}>
       <path
-        d="M13 10V3L4 14h7v7l9-11h-7z"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
+        fillRule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clipRule="evenodd"
       />
     </svg>
   );
 }
 
-export function ChartIcon(props: IconProps) {
+export function EyeIcon(props: IconProps) {
   return (
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden {...props}>
       <path
-        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+        d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
       />
+      <circle cx="12" cy="12" r="3" strokeWidth="2" />
+    </svg>
+  );
+}
+
+export function UsersIcon(props: IconProps) {
+  return (
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden {...props}>
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" strokeWidth="2" />
+      <circle cx="9" cy="7" r="4" strokeWidth="2" />
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87" strokeWidth="2" />
+      <path d="M16 3.13a4 4 0 0 1 0 7.75" strokeWidth="2" />
+    </svg>
+  );
+}
+
+export function PhotoIcon(props: IconProps) {
+  return (
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden {...props}>
+      <rect width="18" height="18" x="3" y="3" rx="4" ry="4" strokeWidth="2" />
+      <circle cx="8.5" cy="8.5" r="1.5" strokeWidth="2" />
+      <polyline points="21 15 16 10 5 21" strokeWidth="2" />
     </svg>
   );
 }
