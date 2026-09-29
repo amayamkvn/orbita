@@ -136,7 +136,7 @@ Cargar con `next/font/google` → `Plus_Jakarta_Sans` (sustituir Geist en `layou
 - H1: “Transforma tu negocio en días, no en meses”.
 - CTA primario: “Quiero transformar mi negocio” → `#planes`.
 - Trust row: Entrega rápida, Diseño profesional, Soporte incluido (checks púrpura).
-- Columna derecha: mockup navegador + mockup teléfono (preview de sitio cliente).
+- Columna derecha: mockup de laptop completo (bisel, esquinas redondeadas, ligera perspectiva) + teléfono superpuesto. No recortar el monitor al borde.
 
 **Mobile**
 

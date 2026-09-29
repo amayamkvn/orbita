@@ -2,11 +2,12 @@ import { WhatsAppIcon } from "@/components/ui/icons";
 
 export function HeroShowcase() {
   return (
-    <div className="relative mt-8 flex items-center justify-center overflow-visible lg:mt-0 lg:justify-start">
-      <div className="absolute top-1/2 -left-6 z-10 hidden h-3.5 w-3.5 -translate-y-1/2 rounded-full bg-brand-purple shadow-[0_0_12px_rgba(124,58,237,0.8)] sm:block" />
-      <div className="relative ml-4 flex w-full max-w-[620px] items-center sm:ml-8 lg:translate-x-10">
-        <div className="relative z-10 ml-10 w-[min(100%,780px)] overflow-hidden rounded-l-2xl rounded-r-none border border-r-0 border-zinc-700/60 bg-zinc-200/80 p-1.5 shadow-[0_25px_60px_rgba(0,0,0,0.45)] sm:ml-16 sm:p-2">
-          <div className="overflow-hidden rounded-l-xl rounded-r-none border border-r-0 border-zinc-200/80 bg-white">
+    <div className="relative mt-8 flex items-center justify-center overflow-visible lg:mt-0 lg:justify-end">
+      <div className="absolute top-1/2 -left-2 z-10 hidden h-3.5 w-3.5 -translate-y-1/2 rounded-full bg-brand-purple shadow-[0_0_12px_rgba(124,58,237,0.8)] sm:block" />
+
+      <div className="relative w-full max-w-[640px] pb-16 sm:pb-10 lg:origin-left lg:[transform:perspective(1600px)_rotateY(-9deg)]">
+        <div className="relative z-10 w-full rounded-2xl border border-zinc-700/70 bg-[#1c1c1f] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.38)]">
+          <div className="overflow-hidden rounded-xl border border-zinc-200/80 bg-white">
             <div className="flex h-11 items-center justify-between border-b border-zinc-200/80 bg-zinc-100/90 px-5 text-zinc-600">
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1.5">
@@ -28,10 +29,10 @@ export function HeroShowcase() {
                 <span>Equipo</span>
               </div>
             </div>
-            <div className="relative flex h-[280px] items-center overflow-hidden bg-white px-8 sm:h-[370px] sm:px-10">
-              <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-white via-white/90 to-transparent" />
-              <div className="relative z-20 max-w-sm">
-                <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-[10px] font-bold tracking-wider text-brand-purple uppercase">
+
+            <div className="relative grid h-[280px] grid-cols-[1.15fr_0.85fr] overflow-hidden bg-white sm:h-[370px]">
+              <div className="relative z-20 flex flex-col justify-center px-6 sm:px-8">
+                <div className="mb-3 inline-flex w-fit items-center gap-2 rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-[10px] font-bold tracking-wider text-brand-purple uppercase">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-purple" />
                   Diseño & Arquitectura Digital
                 </div>
@@ -52,11 +53,27 @@ export function HeroShowcase() {
                   </span>
                 </div>
               </div>
+
+              <div className="relative hidden h-full sm:block" aria-hidden>
+                <div className="absolute inset-0 bg-gradient-to-br from-violet-100 via-zinc-50 to-indigo-100" />
+                <div className="absolute top-8 right-6 h-36 w-28 rotate-3 rounded-2xl bg-white/90 shadow-lg ring-1 ring-zinc-200/80" />
+                <div className="absolute top-24 right-16 h-40 w-32 -rotate-2 rounded-2xl bg-white shadow-xl ring-1 ring-zinc-200/70">
+                  <div className="h-16 rounded-t-2xl bg-gradient-to-br from-brand-purple/80 to-indigo-500" />
+                  <div className="space-y-1.5 p-3">
+                    <div className="h-2 w-16 rounded bg-zinc-200" />
+                    <div className="h-2 w-12 rounded bg-zinc-100" />
+                  </div>
+                </div>
+                <div className="absolute right-8 bottom-8 h-16 w-24 rounded-xl bg-white/80 shadow-md ring-1 ring-zinc-200/70" />
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="absolute -bottom-8 left-0 z-20 hidden w-44 rounded-[38px] border border-zinc-700/80 bg-[#09090b] p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] sm:left-4 sm:block sm:w-48">
+        <div className="mx-auto h-2 w-[72%] rounded-b-xl bg-zinc-300/90" />
+        <div className="mx-auto h-1 w-[42%] rounded-b-md bg-zinc-200" />
+
+        <div className="absolute -bottom-4 -left-2 z-20 hidden w-44 rounded-[38px] border border-zinc-700/80 bg-[#09090b] p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] sm:-left-6 sm:block sm:w-48 lg:-bottom-2">
           <div className="relative flex h-[340px] flex-col justify-between overflow-hidden rounded-[30px] border border-zinc-800/80 bg-[#f8fafc] sm:h-[370px]">
             <div className="flex items-center justify-between bg-[#09090b] px-4 pt-2.5 pb-1 text-white">
               <span className="text-[10px] font-bold tracking-tight text-zinc-300">
