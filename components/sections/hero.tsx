@@ -9,7 +9,7 @@ import { trustItems } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-zinc-100 bg-[#FAFAFC] pt-4 pb-10 md:bg-white md:pt-12 md:pb-16 lg:overflow-visible lg:py-24">
+    <section className="relative overflow-hidden border-b border-zinc-100 bg-[#FAFAFC] pt-4 pb-10 md:bg-white md:pt-12 md:pb-16 lg:py-24">
       <OrbitRings className="inset-0 hidden md:block" />
       <div className="relative z-10 mx-auto grid w-full max-w-[100rem] grid-cols-1 items-center gap-8 px-4 sm:px-8 lg:grid-cols-12 lg:gap-12 xl:gap-16">
         <div className="flex flex-col justify-center text-center md:text-left lg:col-span-6 lg:pl-4">
@@ -60,7 +60,7 @@ export function Hero() {
             ))}
           </div>
         </div>
-        <div className="hidden overflow-visible lg:col-span-6 lg:block lg:pl-4 xl:pl-6">
+        <div className="hidden min-w-0 lg:col-span-6 lg:block lg:pl-2 xl:pl-4">
           <HeroShowcase />
         </div>
       </div>
