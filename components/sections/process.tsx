@@ -26,9 +26,9 @@ export function Process() {
               Proceso ágil & transparente
             </Badge>
             <h2 className="mb-6 text-3xl leading-tight font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Del contacto al lanzamiento{" "}
+              Del contacto al lanzamiento,{" "}
               <br className="hidden sm:inline" />
-              en días, <span className="text-purple-400">no en meses</span>
+              <span className="text-purple-400">sin complicaciones</span>
             </h2>
             <p className="mb-8 max-w-xl text-sm leading-relaxed text-zinc-400 sm:text-lg">
               Nos encargamos de todo el aspecto técnico, diseño y optimización

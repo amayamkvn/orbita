@@ -87,22 +87,22 @@ export const plans = [
 export const benefits = [
   {
     title: "Mayor visibilidad",
-    description: "Haz que tu marca sea vista por más personas.",
+    description: "Aparece en Google cuando te busquen en tu ciudad.",
     icon: "eye" as const,
   },
   {
     title: "Más clientes",
-    description: "Convierte visitas en oportunidades.",
+    description: "Convierte visitas en mensajes de WhatsApp.",
     icon: "users" as const,
   },
   {
     title: "Ahorra tiempo",
-    description: "Automatiza y enfócate en lo importante.",
+    description: "Nosotros lo armamos, tú solo atiendes a tus clientes.",
     icon: "clock" as const,
   },
   {
     title: "Imagen profesional",
-    description: "Proyecta confianza desde el primer clic.",
+    description: "La misma imagen que ya tiene tu competencia.",
     icon: "photo" as const,
   },
 ] as const;
@@ -143,7 +143,7 @@ export const faqs = [
   {
     question: "¿Cómo funciona el cobro recurrente de mantenimiento?",
     answer:
-      "El desarrollo web tiene un pago inicial único en lempiras (L). El servicio mensual de L 450/mes es opcional y cubre hosting de alta velocidad, certificado SSL, copias de seguridad y ajustes ligeros. Puedes cancelarlo cuando desees: tú eres 100% dueño del código y del dominio.",
+      "El desarrollo web tiene un pago inicial único en lempiras (L). El servicio mensual de L 450/mes es opcional y cubre hosting, copias de seguridad y ajustes ligeros. Puedes cancelarlo cuando desees: tú eres 100% dueño del código y del dominio.",
   },
   {
     question: "¿Cómo funciona la integración con WhatsApp?",

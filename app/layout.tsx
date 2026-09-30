@@ -15,9 +15,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Órbita | Sitios Web de Alto Impacto para Negocios Locales",
     description:
-      "Transforma tu negocio en días, no en meses. Diseño y desarrollo web con entrega rápida y WhatsApp integrado.",
+      "Más clientes para tu negocio, todos los días. Diseño y desarrollo web con WhatsApp integrado.",
     locale: "es_HN",
     type: "website",
+  },
+  twitter: {
+    description:
+      "Más clientes para tu negocio, todos los días. Diseño y desarrollo web con WhatsApp integrado.",
   },
 };
 

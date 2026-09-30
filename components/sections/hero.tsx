@@ -21,11 +21,11 @@ export function Hero() {
           </div>
           <div className="flex h-[calc(100svh-6rem)] flex-col gap-3 lg:h-auto lg:contents lg:gap-0">
             <h1 className="order-1 shrink-0 text-3xl leading-[1.18] font-extrabold tracking-tight text-zinc-950 sm:text-5xl lg:order-none lg:mb-6 lg:text-6xl lg:leading-[1.08]">
-              Transforma tu
-              <br className="hidden sm:block" /> negocio en días,
+              Más clientes
+              <br className="hidden sm:block" /> para tu negocio,
               <br className="hidden sm:block" />{" "}
               <span className="bg-gradient-to-r from-brand-purple to-indigo-600 bg-clip-text text-transparent md:bg-none md:text-[#0A0A0A]">
-                no en meses
+                todos los días
               </span>
             </h1>
             <p className="order-2 mx-auto max-w-lg shrink-0 text-sm leading-relaxed text-zinc-600 sm:text-lg md:mx-0 lg:order-none lg:mb-8">
