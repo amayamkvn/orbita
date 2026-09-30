@@ -12,44 +12,46 @@ export function Hero() {
     <section className="relative overflow-hidden border-b border-zinc-100 bg-[#FAFAFC] pt-4 pb-10 md:bg-white md:pt-12 md:pb-20 lg:overflow-visible lg:py-24">
       <OrbitRings className="inset-0 hidden md:block" />
       <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:px-8 lg:grid-cols-12 lg:gap-16">
-        <div className="flex flex-col justify-center gap-4 text-center md:text-left lg:col-span-6 lg:gap-0 lg:pl-4">
+        <div className="flex flex-col justify-center text-center md:text-left lg:col-span-6 lg:pl-4">
           <div className="hidden lg:mb-6 lg:block">
             <Badge className="mx-auto md:mx-0">
               <span className="h-2 w-2 animate-pulse rounded-full bg-brand-purple" />
               Cupos para entrega esta semana disponibles
             </Badge>
           </div>
-          <h1 className="order-1 text-3xl leading-[1.18] font-extrabold tracking-tight text-zinc-950 sm:text-5xl lg:order-none lg:mb-6 lg:text-6xl lg:leading-[1.08]">
-            Transforma tu
-            <br className="hidden sm:block" /> negocio en días,
-            <br className="hidden sm:block" />{" "}
-            <span className="bg-gradient-to-r from-brand-purple to-indigo-600 bg-clip-text text-transparent md:bg-none md:text-[#0A0A0A]">
-              no en meses
-            </span>
-          </h1>
-          <p className="order-2 mx-auto max-w-lg text-sm leading-relaxed text-zinc-600 sm:text-lg md:mx-0 lg:order-none lg:mb-8">
-            Sitios web profesionales que te encuentran en Google y te traen
-            consultas directo a WhatsApp, sin depender solo de redes sociales.
-          </p>
-          <div className="relative order-3 mx-auto flex w-full max-w-[230px] flex-col items-center lg:hidden">
-            <MockupGlow />
-            <Image
-              src="/brand/new_main_banner_mb.svg"
-              alt="Mockup móvil Órbita: tu negocio en la era digital"
-              width={284}
-              height={508}
-              className="relative z-10 h-auto max-h-[36svh] w-full object-contain"
-              priority
-              unoptimized
-            />
+          <div className="flex h-[calc(100svh-6rem)] flex-col gap-3 lg:h-auto lg:contents lg:gap-0">
+            <h1 className="order-1 shrink-0 text-3xl leading-[1.18] font-extrabold tracking-tight text-zinc-950 sm:text-5xl lg:order-none lg:mb-6 lg:text-6xl lg:leading-[1.08]">
+              Transforma tu
+              <br className="hidden sm:block" /> negocio en días,
+              <br className="hidden sm:block" />{" "}
+              <span className="bg-gradient-to-r from-brand-purple to-indigo-600 bg-clip-text text-transparent md:bg-none md:text-[#0A0A0A]">
+                no en meses
+              </span>
+            </h1>
+            <p className="order-2 mx-auto max-w-lg shrink-0 text-sm leading-relaxed text-zinc-600 sm:text-lg md:mx-0 lg:order-none lg:mb-8">
+              Sitios web profesionales que te encuentran en Google y te traen
+              consultas directo a WhatsApp, sin depender solo de redes sociales.
+            </p>
+            <div className="relative order-3 mx-auto flex min-h-0 w-full min-w-0 flex-1 items-center justify-center lg:hidden">
+              <MockupGlow />
+              <Image
+                src="/brand/new_main_banner_mb.svg"
+                alt="Mockup móvil Órbita: tu negocio en la era digital"
+                width={284}
+                height={508}
+                className="relative z-10 h-full w-auto max-w-full object-contain"
+                priority
+                unoptimized
+              />
+            </div>
+            <div className="order-4 flex shrink-0 items-center justify-center gap-4 pb-1 lg:order-none lg:mb-10 md:justify-start">
+              <Button href="#planes" size="lg" className="w-full sm:w-auto">
+                Quiero transformar mi negocio
+                <ArrowRightIcon className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
-          <div className="order-4 flex items-center justify-center gap-4 lg:order-none lg:mb-10 md:justify-start">
-            <Button href="#planes" size="lg" className="w-full sm:w-auto">
-              Quiero transformar mi negocio
-              <ArrowRightIcon className="h-4 w-4" />
-            </Button>
-          </div>
-          <div className="order-5 mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-zinc-200/80 pt-6 text-xs font-semibold text-zinc-600 sm:text-sm md:justify-start lg:order-none lg:mt-0">
+          <div className="order-5 mt-10 flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-zinc-200/80 pt-6 text-xs font-semibold text-zinc-600 sm:text-sm md:justify-start lg:order-none lg:mt-0">
             {trustItems.map((item) => (
               <div key={item} className="flex items-center gap-2">
                 <CheckCircleIcon className="h-4 w-4 text-brand-purple" />
