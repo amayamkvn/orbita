@@ -168,7 +168,7 @@ Cargar con `next/font/google` → `Plus_Jakarta_Sans` (sustituir Geist en `layou
 
 - Card oscura: **Laboratorio Clínico Martínez Ruiz**, El Paraíso, Honduras.
 - Cita testimonial + enlace `lab-martinezruiz.vercel.app`.
-- Screenshot desktop del sitio entregado.
+- Wireframe claro de Stitch (`Wireframe UI Fondo Blanco`) en móvil y desktop.
 
 ### FAQ (`#faq`)
 

@@ -44,14 +44,14 @@ export function CaseStudy() {
               </a>
             </div>
             <div className="lg:col-span-7">
-              <div className="flex items-center justify-center overflow-hidden rounded-2xl border border-zinc-700/80 bg-zinc-950 p-2 shadow-2xl sm:p-3">
+              <div className="flex items-center justify-center overflow-hidden rounded-2xl border border-zinc-700/70 bg-zinc-900 p-1.5 shadow-2xl sm:p-2">
                 <Image
                   src="/brand/case-wireframe.svg"
-                  alt="Wireframe profesional del sitio Laboratorio Clínico Martínez Ruiz"
+                  alt="Wireframe en modo claro del sitio Laboratorio Clínico Martínez Ruiz"
                   width={800}
                   height={520}
                   unoptimized
-                  className="h-auto w-full rounded-xl"
+                  className="h-auto w-full rounded-xl bg-white"
                 />
               </div>
             </div>
