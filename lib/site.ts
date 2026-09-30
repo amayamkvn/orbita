@@ -50,7 +50,7 @@ export const plans = [
       "Una página optimizada para capturar prospectos y redirigirlos directo a ti.",
     price: "L 7,000",
     cadence: "/ Pago único",
-    delivery: "Entrega en 3–5 días",
+    delivery: "Entrega en 7–10 días",
     maintenance: "L 450/mes",
     featured: false,
     features: [
@@ -70,13 +70,13 @@ export const plans = [
       "Estructura multi-página profesional para posicionar tu marca y dominar tu rubro local.",
     price: "L 10,500",
     cadence: "/ Pago único",
-    delivery: "Entrega en 7–10 días",
+    delivery: "Entrega en 10–15 días",
     maintenance: "L 450/mes",
     featured: true,
     features: [
       "De 2 a 5 páginas (Inicio, Servicios, Nosotros, Galería, Contacto)",
       "Diseño personalizado según tu marca",
-      "Ficha de Google Maps optimizada",
+      "Dominio personalizado",
       "WhatsApp, Instagram y Google Maps integrados",
     ],
     cta: "Comenzar ahora",
@@ -102,7 +102,7 @@ export const benefits = [
   },
   {
     title: "Imagen profesional",
-    description: "La misma imagen que ya tiene tu competencia.",
+    description: "Diferénciate de la competencia desde el primer clic.",
     icon: "photo" as const,
   },
 ] as const;
@@ -117,7 +117,7 @@ export const processSteps = [
   {
     n: 2,
     title: "Diseñamos",
-    detail: "Personalizamos tu marca y contenido.",
+    detail: "Personalizamos la web con tu marca y contenido.",
     outlined: false,
   },
   {
@@ -138,12 +138,12 @@ export const faqs = [
   {
     question: "¿Cuánto demora exactamente la entrega de mi sitio?",
     answer:
-      "Para el Plan Básico (Landing Page) tardamos de 3 a 5 días hábiles. Para el Plan Estándar (Sitio Web de 2 a 5 páginas) de 7 a 10 días hábiles, una vez nos proporciones la información básica de tu negocio.",
+      "Para el Plan Básico (Landing Page) tardamos de 7 a 10 días hábiles. Para el Plan Estándar (Sitio Web de 2 a 5 páginas) de 10 a 15 días hábiles, una vez nos proporciones la información básica de tu negocio.",
   },
   {
     question: "¿Cómo funciona el cobro recurrente de mantenimiento?",
     answer:
-      "El desarrollo web tiene un pago inicial único en lempiras (L). El servicio mensual de L 450/mes es opcional y cubre hosting, copias de seguridad y ajustes ligeros. Puedes cancelarlo cuando desees: tú eres 100% dueño del código y del dominio.",
+      "El desarrollo web tiene un pago inicial único en lempiras. El servicio mensual de L 450 cubre hosting, copias de seguridad y ajustes ligeros. Tú eres 100% dueño del código y del dominio.",
   },
   {
     question: "¿Cómo funciona la integración con WhatsApp?",

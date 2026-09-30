@@ -24,7 +24,7 @@ export function Pricing() {
           </h2>
           <p className="text-sm text-zinc-400 md:text-base">
             Desarrollo profesional de pago único en lempiras, con soporte
-            recurrente opcional y sin letra chica.
+            recurrente incluido y sin letra chica.
           </p>
         </div>
         <div className="mx-auto grid w-full grid-cols-1 items-stretch gap-8 lg:grid-cols-2">

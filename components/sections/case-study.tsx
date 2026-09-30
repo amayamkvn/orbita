@@ -26,7 +26,7 @@ export function CaseStudy() {
                 </h2>
                 <p className="text-sm leading-relaxed text-zinc-400">
                   Presencia web profesional y catálogo de servicios con contacto
-                  directo a WhatsApp en El Paraíso, Honduras.
+                  directo a WhatsApp.
                 </p>
               </div>
               <blockquote className="rounded-xl border border-zinc-800/80 bg-zinc-900/60 p-4 text-sm leading-relaxed text-zinc-300 italic">
