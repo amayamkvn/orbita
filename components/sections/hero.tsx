@@ -11,13 +11,13 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-zinc-100 bg-[#FAFAFC] pt-10 pb-12 md:bg-white md:pt-12 md:pb-20 lg:overflow-visible lg:py-24">
       <OrbitRings className="inset-0 hidden md:block" />
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-8 lg:grid-cols-12 lg:gap-6">
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-8 lg:grid-cols-12 lg:gap-16">
         <div className="flex flex-col justify-center text-center md:text-left lg:col-span-6 lg:pl-4">
           <Badge className="mx-auto mb-6 md:mx-0">
             <span className="h-2 w-2 animate-pulse rounded-full bg-brand-purple" />
             Cupos para entrega esta semana disponibles
           </Badge>
-          <h1 className="mb-6 text-3xl leading-[1.18] font-extrabold tracking-tight text-zinc-950 sm:text-5xl lg:text-6xl lg:leading-[1.08]">
+          <h1 className="order-1 mb-6 text-3xl leading-[1.18] font-extrabold tracking-tight text-zinc-950 sm:text-5xl lg:order-none lg:text-6xl lg:leading-[1.08]">
             Transforma tu
             <br className="hidden sm:block" /> negocio en días,
             <br className="hidden sm:block" />{" "}
@@ -25,25 +25,11 @@ export function Hero() {
               no en meses
             </span>
           </h1>
-          <p className="mx-auto mb-8 max-w-lg text-sm leading-relaxed text-zinc-600 sm:text-lg md:mx-0">
+          <p className="order-2 mx-auto mb-8 max-w-lg text-sm leading-relaxed text-zinc-600 sm:text-lg md:mx-0 lg:order-none">
             Sitios web profesionales que te encuentran en Google y te traen
             consultas directo a WhatsApp, sin depender solo de redes sociales.
           </p>
-          <div className="mb-10 flex items-center justify-center gap-4 md:justify-start">
-            <Button href="#planes" size="lg" className="w-full sm:w-auto">
-              Quiero transformar mi negocio
-              <ArrowRightIcon className="h-4 w-4" />
-            </Button>
-          </div>
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-zinc-200/80 pt-6 text-xs font-semibold text-zinc-600 sm:text-sm md:justify-start">
-            {trustItems.map((item) => (
-              <div key={item} className="flex items-center gap-2">
-                <CheckCircleIcon className="h-4 w-4 text-brand-purple" />
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-          <div className="relative mx-auto mt-8 flex w-full max-w-[320px] flex-col items-center lg:hidden">
+          <div className="relative order-3 mx-auto mb-8 flex w-full max-w-[250px] flex-col items-center lg:hidden">
             <MockupGlow />
             <Image
               src="/brand/new_main_banner_mb.svg"
@@ -55,8 +41,22 @@ export function Hero() {
               unoptimized
             />
           </div>
+          <div className="order-4 mb-8 flex items-center justify-center gap-4 lg:order-none lg:mb-10 md:justify-start">
+            <Button href="#planes" size="lg" className="w-full sm:w-auto">
+              Quiero transformar mi negocio
+              <ArrowRightIcon className="h-4 w-4" />
+            </Button>
+          </div>
+          <div className="order-5 flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-zinc-200/80 pt-6 text-xs font-semibold text-zinc-600 sm:text-sm md:justify-start lg:order-none">
+            {trustItems.map((item) => (
+              <div key={item} className="flex items-center gap-2">
+                <CheckCircleIcon className="h-4 w-4 text-brand-purple" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="hidden overflow-visible lg:col-span-6 lg:block">
+        <div className="hidden overflow-visible lg:col-span-6 lg:block lg:pl-6">
           <HeroShowcase />
         </div>
       </div>
