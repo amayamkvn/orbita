@@ -31,14 +31,14 @@ export function Hero() {
             Sitios web profesionales que te encuentran en Google y te traen
             consultas directo a WhatsApp, sin depender solo de redes sociales.
           </p>
-          <div className="relative order-3 mx-auto flex w-full max-w-[150px] flex-col items-center lg:hidden">
+          <div className="relative order-3 mx-auto flex w-full max-w-[230px] flex-col items-center lg:hidden">
             <MockupGlow />
             <Image
               src="/brand/new_main_banner_mb.svg"
               alt="Mockup móvil Órbita: tu negocio en la era digital"
               width={284}
               height={508}
-              className="relative z-10 h-auto max-h-[26svh] w-full object-contain"
+              className="relative z-10 h-auto max-h-[36svh] w-full object-contain"
               priority
               unoptimized
             />
