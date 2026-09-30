@@ -42,18 +42,19 @@ export function Hero() {
               </div>
             ))}
           </div>
-          <div className="relative mx-auto mt-8 flex max-w-[270px] flex-col items-center lg:hidden">
+          <div className="relative mx-auto mt-8 flex max-w-[300px] flex-col items-center lg:hidden">
             <div
               className="pointer-events-none absolute h-64 w-64 -translate-y-4 rounded-full bg-gradient-to-tr from-brand-purple/20 to-indigo-600/10 blur-2xl"
               aria-hidden
             />
             <Image
-              src="/brand/phone-mockup.png"
+              src="/brand/new_main_banner_mb.svg"
               alt="Mockup móvil Órbita: tu negocio en la era digital"
-              width={254}
-              height={414}
-              className="relative h-auto w-full drop-shadow-2xl"
+              width={284}
+              height={508}
+              className="relative h-auto w-full"
               priority
+              unoptimized
             />
           </div>
         </div>

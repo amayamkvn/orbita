@@ -141,7 +141,7 @@ Cargar con `next/font/google` → `Plus_Jakarta_Sans` (sustituir Geist en `layou
 **Mobile**
 
 - Centrado, badge pill, headline con gradiente en span.
-- Mismos mensajes; CTAs full-width.
+- Mockup: SVG `new_main_banner_mb.svg` (sin fondo blanco).
 
 ### Planes y precios (`#planes`)
 
