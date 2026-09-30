@@ -14,16 +14,16 @@ export function whatsappUrl(message: string) {
 }
 
 export const navLinks = [
-  { href: "#beneficios", label: "Beneficios" },
   { href: "#planes", label: "Planes y Precios" },
+  { href: "#beneficios", label: "Beneficios" },
   { href: "#proceso", label: "Proceso" },
   { href: "#casos", label: "Casos de Éxito" },
   { href: "#faq", label: "FAQ" },
 ] as const;
 
 export const footerNav = [
-  { href: "#beneficios", label: "Beneficios" },
   { href: "#planes", label: "Planes y Precios" },
+  { href: "#beneficios", label: "Beneficios" },
   { href: "#proceso", label: "Proceso de Trabajo" },
   { href: "#casos", label: "Casos de Éxito" },
   { href: "#faq", label: "Preguntas Frecuentes" },
