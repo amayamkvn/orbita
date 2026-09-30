@@ -20,7 +20,7 @@ export function FinalCTA() {
         className="pointer-events-none absolute bottom-2 left-24 h-28 w-28 rounded-full border border-brand-purple"
         aria-hidden
       />
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-4 md:flex-row md:px-6">
+      <div className="relative z-10 mx-auto flex w-full max-w-[100rem] flex-col items-center justify-between gap-8 px-4 md:flex-row md:px-8">
         <div>
           <h2 className="mb-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             ¿Listo para transformar tu negocio?

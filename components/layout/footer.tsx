@@ -15,8 +15,8 @@ const social = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-zinc-900 bg-black py-12 text-zinc-400 md:py-16">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:grid-cols-2 lg:grid-cols-4 md:px-6">
+    <footer className="w-full border-t border-zinc-900 bg-black py-12 text-zinc-400 md:py-16">
+      <div className="mx-auto grid w-full max-w-[100rem] grid-cols-1 gap-10 px-4 sm:grid-cols-2 md:px-8 lg:grid-cols-4">
         <div className="space-y-4">
           <a
             href="#"
@@ -89,7 +89,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto mt-12 max-w-7xl border-t border-zinc-900 px-4 pt-8 text-center text-xs text-zinc-600 md:px-6">
+      <div className="mx-auto mt-12 w-full max-w-[100rem] border-t border-zinc-900 px-4 pt-8 text-center text-xs text-zinc-600 md:px-8">
         <p>
           © {new Date().getFullYear()} Órbita. Todos los derechos reservados.
           Diseñado para impulsar a los negocios locales.

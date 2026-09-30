@@ -7,7 +7,7 @@ export function CaseStudy() {
       id="casos"
       className="scroll-mt-24 overflow-hidden border-b border-zinc-800 bg-[#0F0F12] py-12 text-white md:py-16"
     >
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
+      <div className="mx-auto w-full max-w-[100rem] px-4 md:px-8">
         <article className="relative overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-950/90 p-6 shadow-2xl sm:p-10">
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-10">
             <div className="space-y-5 lg:col-span-5">

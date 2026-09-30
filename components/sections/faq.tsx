@@ -4,7 +4,7 @@ import { faqs } from "@/lib/site";
 export function FAQ() {
   return (
     <section id="faq" className="scroll-mt-24 bg-white py-12 md:py-24">
-      <div className="mx-auto max-w-4xl px-4 md:px-6">
+      <div className="mx-auto w-full max-w-5xl px-4 md:px-8">
         <div className="mb-10 text-center md:mb-14">
           <span className="mb-3 block text-xs font-extrabold tracking-widest text-brand-purple uppercase">
             Preguntas frecuentes

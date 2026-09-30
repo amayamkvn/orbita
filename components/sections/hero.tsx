@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-zinc-100 bg-[#FAFAFC] pt-4 pb-10 md:bg-white md:pt-12 md:pb-16 lg:overflow-visible lg:py-24">
       <OrbitRings className="inset-0 hidden md:block" />
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 sm:px-8 lg:grid-cols-12 lg:gap-12 xl:gap-16">
+      <div className="relative z-10 mx-auto grid w-full max-w-[100rem] grid-cols-1 items-center gap-8 px-4 sm:px-8 lg:grid-cols-12 lg:gap-12 xl:gap-16">
         <div className="flex flex-col justify-center text-center md:text-left lg:col-span-6 lg:pl-4">
           <div className="mb-6 hidden md:block">
             <Badge className="mx-auto md:mx-0">

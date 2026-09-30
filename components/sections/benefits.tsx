@@ -16,7 +16,7 @@ const icons = {
 export function Benefits() {
   return (
     <section id="beneficios" className="scroll-mt-24 bg-white py-12 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto w-full max-w-[100rem] px-4 md:px-8">
         <div className="mx-auto mb-10 max-w-2xl text-center md:mb-16">
           <span className="mb-3 block text-xs font-extrabold tracking-widest text-brand-purple uppercase">
             Beneficios clave

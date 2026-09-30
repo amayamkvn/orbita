@@ -8,14 +8,14 @@ export function Pricing() {
   return (
     <section
       id="planes"
-      className="relative scroll-mt-24 overflow-hidden bg-brand-black py-12 text-white md:py-24"
+      className="relative w-full scroll-mt-24 overflow-hidden bg-brand-black py-12 text-white md:py-24"
     >
       <div className="pointer-events-none absolute inset-0 opacity-20" aria-hidden>
         <div className="absolute top-0 left-1/2 h-[400px] w-[800px] -translate-x-1/2 -translate-y-32 rounded-full border border-brand-purple" />
         <div className="absolute top-0 left-1/2 h-[600px] w-[1200px] -translate-x-1/2 -translate-y-52 rounded-full border border-brand-purple/40" />
       </div>
-      <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-6">
-        <div className="mx-auto mb-10 max-w-2xl text-center md:mb-16">
+      <div className="relative z-10 mx-auto w-full max-w-[100rem] px-4 md:px-8">
+        <div className="mx-auto mb-10 max-w-3xl text-center md:mb-16">
           <Badge tone="dark" className="mb-4">
             Planes
           </Badge>
@@ -27,7 +27,7 @@ export function Pricing() {
             recurrente opcional y sin letra chica.
           </p>
         </div>
-        <div className="mx-auto grid max-w-5xl grid-cols-1 items-stretch gap-8 lg:grid-cols-2">
+        <div className="mx-auto grid w-full grid-cols-1 items-stretch gap-8 lg:grid-cols-2">
           {plans.map((plan) => (
             <article
               key={plan.id}

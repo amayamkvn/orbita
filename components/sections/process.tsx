@@ -18,7 +18,7 @@ export function Process() {
         className="pointer-events-none absolute -bottom-32 left-10 h-96 w-96 rounded-full bg-brand-purple-dark/20 blur-3xl"
         aria-hidden
       />
-      <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-6">
+      <div className="relative z-10 mx-auto w-full max-w-[100rem] px-4 md:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
           <div className="flex flex-col items-start lg:col-span-7">
             <Badge tone="pulse" className="mb-5">

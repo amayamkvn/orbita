@@ -5,8 +5,8 @@ import { navLinks, whatsappUrl } from "@/lib/site";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-100 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:px-6 lg:h-28">
+    <header className="sticky top-0 z-50 w-full border-b border-zinc-100 bg-white/90 backdrop-blur-md">
+      <div className="mx-auto flex h-20 w-full max-w-[100rem] items-center justify-between px-4 md:px-8 lg:h-28">
         <a href="#" aria-label="Ir al inicio de Órbita">
           <Logo size="sm" className="lg:hidden" />
           <Logo size="lg" className="hidden lg:inline-flex" />
