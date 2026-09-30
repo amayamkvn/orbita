@@ -136,7 +136,7 @@ Cargar con `next/font/google` → `Plus_Jakarta_Sans` (sustituir Geist en `layou
 - H1: “Transforma tu negocio en días, no en meses”.
 - CTA primario: “Quiero transformar mi negocio” → `#planes`.
 - Trust row: Entrega rápida, Diseño profesional, Soporte incluido (checks púrpura).
-- Columna derecha: mockup de laptop completo (bisel, esquinas redondeadas, ligera perspectiva) + teléfono superpuesto. No recortar el monitor al borde.
+- Columna derecha: imagen SVG `new_main_banner_dk.svg` (mockup laptop + celular de Stitch).
 
 **Mobile**
 
