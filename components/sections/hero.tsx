@@ -29,8 +29,8 @@ export function Hero() {
               </span>
             </h1>
             <p className="order-2 mx-auto max-w-lg shrink-0 text-sm leading-relaxed text-zinc-600 sm:text-lg md:mx-0 lg:order-none lg:mb-8">
-              Sitios web profesionales que te encuentran en Google y te traen
-              consultas directo a WhatsApp, sin depender solo de redes sociales.
+              Tu negocio en internet, listo para mostrar tus servicios y atraer
+              clientes por tus canales de contacto.
             </p>
             <div className="relative order-3 mx-auto flex min-h-0 w-full min-w-0 flex-1 items-center justify-center lg:hidden">
               <MockupGlow />
