@@ -6,14 +6,14 @@ import { navLinks, whatsappUrl } from "@/lib/site";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-100 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:h-28 md:px-6">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:px-6 lg:h-28">
         <a href="#" aria-label="Ir al inicio de Órbita">
-          <Logo size="sm" className="md:hidden" />
-          <Logo size="lg" className="hidden md:inline-flex" />
+          <Logo size="sm" className="lg:hidden" />
+          <Logo size="lg" className="hidden lg:inline-flex" />
         </a>
         <nav
           aria-label="Navegación principal"
-          className="hidden items-center gap-8 text-sm font-semibold text-zinc-600 md:flex"
+          className="hidden items-center gap-4 text-xs font-semibold text-zinc-600 md:flex lg:gap-8 lg:text-sm"
         >
           {navLinks.map((link) => (
             <a
@@ -29,10 +29,10 @@ export function Header() {
           href={whatsappUrl("Hola Órbita, quiero cotizar un sitio web")}
           external
           size="sm"
-          className="rounded-full px-3.5 py-1.5 text-xs font-semibold md:px-6 md:py-2.5 md:text-sm"
+          className="rounded-full px-3.5 py-1.5 text-xs font-semibold md:px-5 md:py-2 lg:px-6 lg:py-2.5 lg:text-sm"
         >
           Hablemos
-          <WhatsAppIcon className="hidden h-4 w-4 md:block" />
+          <WhatsAppIcon className="hidden h-4 w-4 lg:block" />
         </Button>
       </div>
     </header>

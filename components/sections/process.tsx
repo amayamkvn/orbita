@@ -112,7 +112,7 @@ export function Process() {
                 alt="Equipo colaborando en un sitio web"
                 width={800}
                 height={800}
-                className="h-[280px] w-full object-cover md:h-[400px]"
+                className="h-[280px] w-full object-cover md:h-[340px] lg:h-[400px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             </div>

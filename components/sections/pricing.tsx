@@ -19,7 +19,7 @@ export function Pricing() {
           <Badge tone="dark" className="mb-4">
             Planes
           </Badge>
-          <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-white sm:text-5xl">
+          <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Planes transparentes pensados para tu negocio
           </h2>
           <p className="text-sm text-zinc-400 md:text-base">
@@ -27,7 +27,7 @@ export function Pricing() {
             recurrente opcional y sin letra chica.
           </p>
         </div>
-        <div className="mx-auto grid max-w-5xl grid-cols-1 items-stretch gap-8 md:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 items-stretch gap-8 lg:grid-cols-2">
           {plans.map((plan) => (
             <article
               key={plan.id}

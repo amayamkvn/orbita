@@ -16,7 +16,7 @@ const social = [
 export function Footer() {
   return (
     <footer className="border-t border-zinc-900 bg-black py-12 text-zinc-400 md:py-16">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 md:grid-cols-4 md:px-6">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:grid-cols-2 lg:grid-cols-4 md:px-6">
         <div className="space-y-4">
           <a
             href="#"
