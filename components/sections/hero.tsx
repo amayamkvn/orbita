@@ -32,7 +32,7 @@ export function Hero() {
               Tu negocio en internet, listo para mostrar tus servicios y atraer
               clientes por tus canales de contacto.
             </p>
-            <div className="relative order-3 mx-auto flex w-full min-w-0 items-center justify-center max-md:min-h-0 max-md:flex-1 md:max-w-[240px] md:flex-none lg:hidden">
+            <div className="relative order-3 mx-auto flex w-full min-w-0 items-center justify-center overflow-visible p-6 max-md:min-h-0 max-md:flex-1 md:max-w-[280px] md:flex-none lg:hidden">
               <MockupGlow />
               <Image
                 src="/brand/new_main_banner_mb.svg"
@@ -60,7 +60,7 @@ export function Hero() {
             ))}
           </div>
         </div>
-        <div className="hidden min-w-0 lg:col-span-6 lg:block lg:pl-2 xl:pl-4">
+        <div className="hidden min-w-0 overflow-visible lg:col-span-6 lg:block">
           <HeroShowcase />
         </div>
       </div>
