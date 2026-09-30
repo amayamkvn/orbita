@@ -16,9 +16,6 @@ export function CaseStudy() {
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-purple-light" />
                   Caso de éxito
                 </span>
-                <span className="text-xs font-medium text-zinc-500">
-                  El Paraíso, Honduras
-                </span>
               </div>
               <div>
                 <h2 className="mb-2 text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
