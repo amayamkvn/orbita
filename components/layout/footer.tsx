@@ -1,4 +1,3 @@
-import { Logo } from "@/components/ui/logo";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -19,8 +18,11 @@ export function Footer() {
     <footer className="border-t border-zinc-900 bg-black py-12 text-zinc-400 md:py-16">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 md:grid-cols-4 md:px-6">
         <div className="space-y-4">
-          <a href="#">
-            <Logo inverted size="lg" />
+          <a
+            href="#"
+            className="text-lg font-extrabold tracking-tight text-white"
+          >
+            Órbita
           </a>
           <p className="max-w-xs text-xs leading-relaxed text-zinc-500">
             {site.tagline}

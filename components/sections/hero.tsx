@@ -9,10 +9,10 @@ import { trustItems } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-zinc-100 bg-[#FAFAFC] pt-6 pb-12 md:bg-white md:pt-12 md:pb-20 lg:overflow-visible lg:py-24">
+    <section className="relative overflow-hidden border-b border-zinc-100 bg-[#FAFAFC] pt-4 pb-10 md:bg-white md:pt-12 md:pb-20 lg:overflow-visible lg:py-24">
       <OrbitRings className="inset-0 hidden md:block" />
       <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:px-8 lg:grid-cols-12 lg:gap-16">
-        <div className="flex flex-col justify-center gap-6 text-center md:text-left lg:col-span-6 lg:gap-0 lg:pl-4">
+        <div className="flex flex-col justify-center gap-4 text-center md:text-left lg:col-span-6 lg:gap-0 lg:pl-4">
           <div className="hidden lg:mb-6 lg:block">
             <Badge className="mx-auto md:mx-0">
               <span className="h-2 w-2 animate-pulse rounded-full bg-brand-purple" />
@@ -31,14 +31,14 @@ export function Hero() {
             Sitios web profesionales que te encuentran en Google y te traen
             consultas directo a WhatsApp, sin depender solo de redes sociales.
           </p>
-          <div className="relative order-3 mx-auto flex w-full max-w-[180px] flex-col items-center lg:hidden">
+          <div className="relative order-3 mx-auto flex w-full max-w-[150px] flex-col items-center lg:hidden">
             <MockupGlow />
             <Image
               src="/brand/new_main_banner_mb.svg"
               alt="Mockup móvil Órbita: tu negocio en la era digital"
               width={284}
               height={508}
-              className="relative z-10 h-auto max-h-[32svh] w-full object-contain"
+              className="relative z-10 h-auto max-h-[26svh] w-full object-contain"
               priority
               unoptimized
             />
@@ -49,7 +49,7 @@ export function Hero() {
               <ArrowRightIcon className="h-4 w-4" />
             </Button>
           </div>
-          <div className="order-5 flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-zinc-200/80 pt-6 text-xs font-semibold text-zinc-600 sm:text-sm md:justify-start lg:order-none">
+          <div className="order-5 mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-zinc-200/80 pt-6 text-xs font-semibold text-zinc-600 sm:text-sm md:justify-start lg:order-none lg:mt-0">
             {trustItems.map((item) => (
               <div key={item} className="flex items-center gap-2">
                 <CheckCircleIcon className="h-4 w-4 text-brand-purple" />
