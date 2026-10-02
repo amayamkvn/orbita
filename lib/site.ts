@@ -2,9 +2,9 @@ export const site = {
   name: "Órbita",
   tagline:
     "Transformación digital y diseño de sitios web de alto impacto para negocios locales.",
-  email: "hola@orbita.com",
-  phones: ["+504 2793-4073", "+504 9917-8861"],
-  whatsappNumber: "50427934073",
+  email: "contacto@orbita-hn.com",
+  phones: ["+504 9261-5426"],
+  whatsappNumber: "50492615426",
   caseStudyUrl: "https://lab-martinezruiz.vercel.app",
   currency: "Lempiras",
 } as const;

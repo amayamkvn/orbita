@@ -18,7 +18,7 @@ Contexto de diseño extraído de **Google Stitch** para implementar la landing e
 - **Tono:** profesional, ágil, orientado a conversión (Google + WhatsApp).
 - **Estética:** fondo claro en hero y secciones de confianza; bloques oscuros (`#0A0A0A`) para precios, proceso y CTA final; acento **violeta** (`#7C3AED`) como color de acción y órbitas decorativas.
 - **Metáfora visual:** anillos orbitales, nodos luminosos púrpura, mockups de escritorio + móvil en el hero (desktop).
-- **Conversión principal:** WhatsApp `+504 2793-4073` — `https://wa.me/50427934073`
+- **Conversión principal:** WhatsApp `+504 9261-5426` — `https://wa.me/50492615426`
 
 ---
 
