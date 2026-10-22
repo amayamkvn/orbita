@@ -23,8 +23,8 @@ export function Pricing() {
             Planes transparentes pensados para tu negocio
           </h2>
           <p className="text-sm text-zinc-400 md:text-base">
-            Desarrollo profesional de pago único en lempiras, con soporte
-            recurrente incluido y sin letra chica.
+            Desarrollo profesional de pago único en lempiras, con hosting y
+            dominio incluidos por 1 año y sin letra chica.
           </p>
         </div>
         <div className="mx-auto grid w-full grid-cols-1 items-stretch gap-8 lg:grid-cols-2">
@@ -84,7 +84,7 @@ export function Pricing() {
                         plan.featured ? "bg-emerald-400" : "bg-brand-purple",
                       )}
                     />
-                    Mantenimiento, hosting y cambios ligeros: {plan.maintenance}
+                    {plan.maintenance}
                   </p>
                 </div>
                 <ul className="mb-8 space-y-3.5 text-sm text-zinc-700">
@@ -126,8 +126,8 @@ export function Pricing() {
         <div className="mx-auto mt-8 flex max-w-3xl flex-col items-center justify-center gap-2 rounded-2xl border border-zinc-800 bg-zinc-900/90 p-4 text-center text-xs text-zinc-400 sm:flex-row">
           <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-400" />
           <span>
-            Hosting, dominio y soporte continuo desde{" "}
-            <strong className="text-white">L 450/mes</strong>. Sin contratos
+            Un solo pago que incluye hosting y dominio por{" "}
+            <strong className="text-white">1 año</strong>. Sin contratos
             forzosos, el código y el dominio son 100% tuyos.
           </span>
         </div>
