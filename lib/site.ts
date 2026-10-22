@@ -51,7 +51,7 @@ export const plans = [
     price: "L 7,000",
     cadence: "/ Pago único",
     delivery: "Entrega en 7–10 días",
-    maintenance: "L 450/mes",
+    maintenance: "Pago único con hosting y dominio por 1 año",
     featured: false,
     features: [
       "Página optimizada para que te contacten por WhatsApp",
@@ -71,7 +71,7 @@ export const plans = [
     price: "L 10,500",
     cadence: "/ Pago único",
     delivery: "Entrega en 10–15 días",
-    maintenance: "L 450/mes",
+    maintenance: "Pago único con hosting y dominio por 1 año",
     featured: true,
     features: [
       "De 2 a 5 páginas (Inicio, Servicios, Nosotros, Galería, Contacto)",
@@ -141,9 +141,9 @@ export const faqs = [
       "Para el Plan Básico (Landing Page) tardamos de 7 a 10 días hábiles. Para el Plan Estándar (Sitio Web de 2 a 5 páginas) de 10 a 15 días hábiles, una vez nos proporciones la información básica de tu negocio.",
   },
   {
-    question: "¿Cómo funciona el cobro recurrente de mantenimiento?",
+    question: "¿Cuántos pagos debo realizar y por qué métodos?",
     answer:
-      "El desarrollo web tiene un pago inicial único en lempiras. El servicio mensual de L 450 cubre hosting, copias de seguridad y ajustes ligeros. Tú eres 100% dueño del código y del dominio.",
+      "Solo se realiza un pago único mediante transferencia bancaria. Ese pago cubre el desarrollo del sitio, el hosting y el dominio por 1 año. Tú eres 100% dueño del código y del dominio.",
   },
   {
     question: "¿Cómo funciona la integración con WhatsApp?",
